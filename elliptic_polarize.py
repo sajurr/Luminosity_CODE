@@ -1,3 +1,5 @@
+#this code is not very clean yet,
+#and I intend to make some changes in the future, if required.
 from manim import *
 import numpy as np
 import math
@@ -36,7 +38,7 @@ class FromThreeDToTwoD(ThreeDScene):
 
 
 class SineCurveUnitCircle(Scene):
-    '''I had written/referenced the intial code for the dot tracing a circle which I have modified to an ellipse for this assignment.'''
+    #I had written/referenced the intial code for the dot tracing a circle which I have modified to an ellipse for this assignment.
     def construct(self):
         self.show_axis()
         self.show_circle()
