@@ -109,3 +109,23 @@ class SmallTestCode(Scene):
         sq = Square()
         self.play(Create(sq))
         self.wait()
+
+
+
+class ArrayMatrix(Scene):
+    def costruct(self):
+        a1 = Matrix([[3, 4], ["\pi", 4]])
+        m0 = Matrix([[2, "\pi"], [-1, 1]])
+        a1.get_brackets()
+        self.add(m0)
+
+
+class GetBracketsExample(Scene):
+    def construct(self):
+        m0 = Matrix([["\pi", 3], [1, 5]])
+        bra = m0.get_brackets()
+        colors = [BLUE, GREEN]
+        for k in range(len(colors)):
+            bra[k].set_color(colors[k])
+        self.add(m0)
+        
